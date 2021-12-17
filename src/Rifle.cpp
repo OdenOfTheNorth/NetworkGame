@@ -12,6 +12,6 @@ void Rifle::PlayerFire(int Id, int projectileId, Vector2 pos, Vector2 dir)
 
 void Rifle::ServerFire(int Id, int projectileId, Vector2 pos, Vector2 dir)
 {
-	engPrint("Rifle");
+	//engPrint("Rifle");
 	projectiles[projectileId].spawn(Id, pos, dir);
 }

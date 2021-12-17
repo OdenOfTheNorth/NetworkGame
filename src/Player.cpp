@@ -79,7 +79,7 @@ void Player::update()
 			clientSend(msg);
 			msg.free();
 
-			engPrint("player id %d sent ChangeWeapon 1 ", id);
+			//engPrint("player id %d sent ChangeWeapon 1 ", id);
 		}
 		if (engKeyPressed(Key::NUM2))
 		{
@@ -92,7 +92,7 @@ void Player::update()
 			clientSend(msg);
 			msg.free();
 
-			engPrint("player id %d sent ChangeWeapon 2 ", id);
+			//engPrint("player id %d sent ChangeWeapon 2 ", id);
 		}
 
 		if (engKeyDown(Key::Space)) 
@@ -138,7 +138,7 @@ void Player::update()
 
 		if (engKeyPressed(Key::E))
 		{
-			engPrint("sent PlayerRequestShield");
+			//engPrint("sent PlayerRequestShield");
 			NetMessage msg;
 			msg.write<MessageType>(MessageType::PlayerRequestShield);
 			clientSend(msg);

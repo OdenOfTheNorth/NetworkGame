@@ -133,7 +133,7 @@ void handleMessage(NetMessage msg)
 
 		case MessageType::PlayerUpShield:
 		{
-			engPrint("PlayerUpShield");
+			//engPrint("PlayerUpShield");
 
 			int playerID = msg.read<int>();
 			float time = msg.read<int>();
