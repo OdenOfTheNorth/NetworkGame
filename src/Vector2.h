@@ -14,8 +14,8 @@ public:
 	float y;
 
 	static float lerp(float a, float b, float f) { return a + f * (b - a); }
-	static float radToDeg() { return 57.2957795128961; }
-	static float degToRad() { return 0.01745329252; }
+	static float radToDeg() { return 57.2957795128961;}
+	static float degToRad() { return 0.01745329252;}
 
 	float Magnitude() { return sqrt(x * x + y * y); }
 
